@@ -4,12 +4,17 @@
 
 Installation
 -------------
-
-`mrt add moment`
+```
+cd meteor-application
+mkdir packages && cd packages
+git clone https://github.com/huyinghuan/meteor-moment.git moment
+cd ..
+meteor add moment
+```
 
 Usage
 -------------
-Just like the [moment docs](http://momentjs.com/docs/) tell you:
+in client or server js ,just like the [moment docs](http://momentjs.com/docs/) tell you:
 
 `var oneMomentPlease = moment();`
 
@@ -32,3 +37,7 @@ Template.hello.time_date = function(){
   return new Date();
 }
 ```
+
+Helper Test
+-------------
+https://github.com/huyinghuan/test-meteor-moment
