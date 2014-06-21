@@ -8,8 +8,10 @@ Installation
 cd meteor-application
 mkdir packages && cd packages
 git clone https://github.com/huyinghuan/meteor-moment.git moment
+cd moment && git submodule init && git submoudule update
 cd ..
 meteor add moment
+meteor run -p 3000
 ```
 
 Usage
